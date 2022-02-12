@@ -1,0 +1,24 @@
+<main>
+    <h1>Blockchain node</h1>
+    <aside>
+        <p>{{ status }}</p>
+    </aside>
+    <section>
+        <transaction-form
+                :disabled="shouldDisableForm()"
+                @add-transaction="addTransaction"
+        >
+        </transaction-form>
+    </section>
+    <section>
+        <pending-transactions-panel
+                :transactions="transactions()"
+                :disabled="shouldDisableGeneration()"
+                @generate-block="generateBlock"
+        >
+        </pending-transactions-panel>
+    </section>
+    <section>
+        <blocks-panel :blocks="blocks()"></blocks-panel>
+    </section>
+</main>

@@ -1,0 +1,17 @@
+/* STATUS LINE */
+
+aside {
+  background: var(--disabled-color);
+}
+
+aside, pre {
+  border: 1px solid var(--border-color);
+  padding: 15px;
+  margin: 0;
+}
+
+p {
+  font-size: 14px;
+  line-height: 24px;
+  margin: 0;
+}

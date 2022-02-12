@@ -1,0 +1,13 @@
+<div>
+    <h2>Pending transactions</h2>
+    <pre class="pending-transactions__list">{{ formattedTransactions() || "No pending transactions yet." }}</pre>
+    <div class="pending-transactions__form">
+        <button class="ripple"
+                type="button"
+                :disabled="disabled"
+                @click="generateBlock()">
+            GENERATE BLOCK
+        </button>
+    </div>
+    <div class="clear"></div>
+</div>
